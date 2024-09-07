@@ -1,4 +1,50 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+// nav-header開始
+.nav {
+    background-color: $layoutBackground-color;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    a {
+        font-size: 20px;
+    }
+    .nav-logo {
+        width: 88px;
+        height: 49px;
+        object-fit: contain;
+    }
 }
+
+@include phone {
+    .nav {
+        padding-top: 0;
+        padding-bottom: 0;
+        .container-sm-full {
+            padding: 0;
+        }
+    }
+    .header-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        .nav-logo {
+            margin-left: 15px;
+        }
+        a {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            display: block;
+        }
+        .header-nav-list {
+            flex-wrap: wrap;
+            width: 100%;
+            li {
+                width: 50%;
+                text-align: center;
+                margin-right: 0;
+            }
+            a {
+                border: 1px solid #fff;
+            }
+        }
+    }
+}
+
+// nav結束

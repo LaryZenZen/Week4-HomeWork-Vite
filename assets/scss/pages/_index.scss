@@ -1,3 +1,241 @@
-.index-title {
-  font-size: 100px;
+// index全域設定
+h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: $index-title-color;
+    text-align: center;
+}
+
+a {
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #AA0601;
+}
+
+@include phone {
+    h2 {
+        font-size: 24px;
+    }
+}
+
+// banner開始
+.banner {
+    background-image: url(/assets/images/home-header.png);
+    height: 787px;
+    background-size: cover;
+    background-position: center;
+    .banner-logo {
+        // max-height: 100%;
+        text-align: right;
+    }
+    h1 {
+        color: $index-title-color;
+        font-size: 36px;
+        .h1-title {
+            font-size: 64px;
+            font-weight: bold;
+        }
+    }
+}
+
+@include pad {
+    .banner {
+        height: 787px;
+    }
+}
+
+@include phone {
+    .banner {
+        background-image: url(/assets/images/home-header-sm.png);
+        height: 396px;
+        h1 {
+            font-size: 24px;
+            .h1-title {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+// banner結束
+// pro開始
+.pro {
+    background-color: $index-background-color;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .pro-intro {
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        h3 {
+            color: $index-title-color;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+}
+
+@include phone {
+    .pro {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+// pro結束
+// classic開始
+.classic {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    h3 {
+        color: $index-title-color;
+        font-size: 48px;
+        font-weight: 900;
+        font-style: italic;
+        text-align: center;
+    }
+}
+
+@include phone {
+    .classic {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+// classic結束
+// cobranding開始
+.cobranding {
+    background-image: url(/assets/images/index-bg.png);
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    h2 {
+        color: #FFF;
+    }
+    .cobranding-item {
+        width: 50%;
+        h3 {
+            color: $index-title-color;
+            background-color: #fff;
+            padding: 8px 0;
+            text-align: center;
+            font-size: 48px;
+            font-weight: 900;
+            font-style: italic;
+        }
+    }
+}
+
+@include pad {
+    .cobranding-items {
+        flex-wrap: wrap;
+        .cobranding-item {
+            width: 100%;
+        }
+    }
+}
+
+@include phone {
+    .cobranding {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .cobranding-items {
+            flex-wrap: wrap;
+            .cobranding-item {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// recommend開始
+.recommend {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .recommend-list-body {
+        border-radius: 4px;
+        .recommend-list-content {
+            min-height: 205px;
+            padding: 16px;
+            border: 1px solid #DEE2E6;
+            box-shadow: 0px 2px 6px #00000029;
+        }
+        .recommend-list-time {
+            font-size: 14px;
+            color: #707070;
+        }
+    }
+}
+
+@include phone {
+    .recommend {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+// recommend結束
+// contact開始
+.contact {
+    background: $index-background-color;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .contact-intro {
+        font-size: 20px;
+    }
+    input {
+        width: 100%;
+        padding: 6px 0 6px 12px;
+        background: #FBF2F2;
+    }
+    textarea {
+        width: 100%;
+        padding: 6px 0 106px 12px;
+        background: #FBF2F2;
+    }
+    label {
+        display: block;
+    }
+    .contact-check {
+        input {
+            width: auto;
+        }
+        p {
+            display: inline;
+        }
+        label {
+            display: inline;
+        }
+    }
+    .contact-submit {
+        display: block;
+        width: 100%;
+        background: #AA0601;
+        color: #fff;
+        font-weight: bold;
+        input {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            cursor: pointer;
+        }
+    }
+}
+
+@include phone {
+    .contact {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }

@@ -1,4 +1,72 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+// footer開始
+.footer {
+    background: $layoutBackground-color;
+    padding-top: 48px;
+    padding-bottom: 32px;
+    .footer-socialMedia {
+        img {
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+        }
+    }
+    .footer-number {
+        font-size: 36px;
+        .material-symbols-outlined {
+            font-size: 32px;
+            margin-right: 22px;
+        }
+    }
+    .footer-mail {
+        font-size: 36px;
+        .material-symbols-outlined {
+            font-size: 32px;
+            margin-right: 20px;
+        }
+    }
+    .footer-line {
+        border: solid 1px #fff;
+    }
+    .footer-article {
+        p {
+            color: #FFFFFF;
+        }
+        a {
+            font-size: 14px;
+        }
+    }
+}
+
+@include phone {
+    .footer-nav {
+        .footer-nav-page {
+            display: none;
+        }
+        .footer-number {
+            font-size: 16px;
+            margin-right: 8px;
+            .material-symbols-outlined {
+                margin-right: 8px;
+            }
+        }
+        .footer-mail {
+            font-size: 16px;
+            margin-right: 8px;
+            .material-symbols-outlined {
+                margin-right: 8px;
+            }
+        }
+        .footer-socialMedia {
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    .footer-article {
+        flex-direction: column;
+        a {
+            font-size: 16px;
+        }
+    }
 }

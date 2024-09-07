@@ -1,0 +1,65 @@
+// store開始
+.store {
+    padding-top: 96px;
+    padding-bottom: 80px;
+    .store-title {
+        color: #000;
+        text-align-last: left;
+        border-left: 8px solid #9F1213;
+        padding-left: 16px;
+    }
+    .store-select {
+        label {
+            font-size: 24px;
+        }
+        select {
+            display: block;
+            flex-grow: 1;
+            padding: 6px 0 6px 12px;
+        }
+    }
+    .store-card {
+        .store-card-title {
+            padding: 8px 0 8px 24px;
+            border: 1px solid #00000020;
+            font-size: 24px;
+        }
+        .store-card-body {
+            padding: 16px 24px 16px 24px;
+            border: 1px solid #00000020;
+            font-size: 20px;
+        }
+        .store-btn {
+            display: block;
+            background: #000;
+            font-size: 19px;
+            text-align: center;
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+        .material-symbols-outlined {
+            margin-right: 8px;
+        }
+    }
+    .store-btn {
+        display: block;
+        background: #000;
+        font-size: 19px;
+        text-align: center;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
+
+@include phone {
+    .store {
+        padding-top: 96px;
+        padding-bottom: 40px;
+        h2 {
+            font-size: 24px;
+        }
+        .store-map {
+            height: 208px;
+        }
+    }
+}
